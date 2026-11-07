@@ -28,5 +28,23 @@ public abstract class kendaraan {
     
     public void tampilkanInfo(){
         System.out.println("Nomor rangka: "+this.nomorRangka);
+        System.out.println("Merk: "+this.merk);
+    }
+
+    // getter setter
+    public String getNomorRangka(){
+        return nomorRangka;
+    }
+    public String getMerk(){
+        return merk;
+    }
+    public void setMerk(String merk){
+        this.merk=merk;
+    }
+    public int getKecepatan(){
+        return kecepatan;
+    }
+    public void setKecepatan(int kecepatan){
+        this.kecepatan=kecepatan;
     }
 }
