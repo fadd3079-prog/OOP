@@ -9,7 +9,7 @@ public class trukKargo extends kendaraan implements kontrolMesin {
     @Override
     public void hidupkanMesin(boolean status) {
         this.mesinHidup=status;
-        System.out.println("Mesin "+getMerk()+(status? " MENYALA." : " MATI."));
+        System.out.println("Mesin "+getMerk()+(status? " menyala" : " mati"));
     }
 
     @Override

@@ -44,7 +44,13 @@ public abstract class kendaraan {
     public int getKecepatan(){
         return kecepatan;
     }
-    public void setKecepatan(int kecepatan){
-        this.kecepatan=kecepatan;
+    public void setKecepatan(int kecepaatanBaru){
+        if(kecepaatanBaru>kendaraan.MAX_KECEPATAN){
+            this.kecepatan=kendaraan.MAX_KECEPATAN;
+        }else if(kecepaatanBaru<0){
+            this.kecepatan=0;
+        }else{
+            this.kecepatan=kecepaatanBaru;
+        }
     }
 }
