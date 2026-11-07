@@ -2,7 +2,7 @@ package Responsi;
 
 public abstract class kendaraan {
     // immunability (konstanta global)
-    public static final int MAX_KECEPATAN=200;
+    public static final int MAX_KECEPATAN=500;
 
     // immunability private final
     private final String nomorRangka;
@@ -24,7 +24,7 @@ public abstract class kendaraan {
     }
 
     // abstract method
-    public voig gasPol();
+    public abstract void gasPol();
     
     public void tampilkanInfo(){
         System.out.println("Nomor rangka: "+this.nomorRangka);
